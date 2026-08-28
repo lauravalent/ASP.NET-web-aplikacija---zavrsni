@@ -24,17 +24,6 @@
     <p class="cijena">@Model.PricePerNight € / noć</p>
 </section>
 
-<section class="uvod" id="section-istrazi">
-    <div class="uvod-dio">
-        <img src="@Model.PoolImg" alt="pool" id="bazen_udaljenost"/>
-        <p class="uvod-paragraph animate-right">
-            @Model.Name nalazi se na @Model.PoolDistance metara od bazena. Može se doći autom, ali pošto je to 7 minuta hoda,a
-            preporučamo da odete pješke putem koji je označen na slici. Bazen se nalazi podalje od svih kuća na poptunoj čistini.
-            Lokaciju smo izabrali kako bi gosti imali mir i privatnost s obzirom na šumu koja je jedino što okružuje bazen.
-        </p>
-    </div>
-</section>
-
 @if (ViewBag.StartDate != null && ViewBag.EndDate != null)
 {
     <a asp-controller="Reservation"
@@ -46,6 +35,19 @@
         Rezerviraj
     </a>
 }
+
+<section class="uvod" id="section-istrazi">
+    <div class="uvod-dio">
+        <img src="@Model.PoolImg" alt="pool" id="bazen_udaljenost"/>
+        <p class="uvod-paragraph animate-right">
+            @Model.Name nalazi se na @Model.PoolDistance metara od bazena. Može se doći autom, ali pošto je to 7 minuta hoda,a
+            preporučamo da odete pješke putem koji je označen na slici. Bazen se nalazi podalje od svih kuća na poptunoj čistini.
+            Lokaciju smo izabrali kako bi gosti imali mir i privatnost s obzirom na šumu koja je jedino što okružuje bazen.
+        </p>
+    </div>
+</section>
+
+
 
 @if (Model.Photo.Any())
 {
