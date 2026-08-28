@@ -1326,6 +1326,10 @@ h1, h2 {
     margin-top: 7rem;
 }
 
+.details-button {
+    margin-bottom: 8rem;
+    margin-left: 7rem;
+}
 
 @media (max-width: 1200px) {
     .smjestaj-dio {
